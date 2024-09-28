@@ -1,0 +1,146 @@
+{
+	"info": {
+		"_postman_id": "3a9edb9f-80e6-49ba-9a96-7381802b117c",
+		"name": "SEEK-RETO",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "2321582"
+	},
+	"item": [
+		{
+			"name": "2) Consultar Candidatos",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJvbWFyemIiLCJpYXQiOjE3Mjc0OTc5ODEsImV4cCI6MTcyNzUzMzk4MX0.aPpqKEx5RFtas1G1jmXfCiCBsYHkYWTCDnQPEjf7U3w",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/candidates/findAll",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"candidates",
+						"findAll"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "1) Obtener Token",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/candidates/token",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"candidates",
+						"token"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "3) Consultar Candidato",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJvbWFyemIiLCJpYXQiOjE3Mjc0OTc5ODEsImV4cCI6MTcyNzUzMzk4MX0.aPpqKEx5RFtas1G1jmXfCiCBsYHkYWTCDnQPEjf7U3w",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/candidates/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"candidates",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "4) Nuevo Candidato",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJvbWFyemIiLCJpYXQiOjE3Mjc1MDEyMzcsImV4cCI6MTcyNzUzNzIzN30.mBC9Fnobp4OKzTkOE37rMqhvCqHiDv2Xtilv8fTWQks",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"fullName\": \"Omar Zegarra\",\r\n    \"email\": \"omarh.zegarra@gmail.com\",\r\n    \"gender\": \"Masculino\",\r\n    \"salaryExpected\": \"5000\",\r\n    \"roleApply\": \"Developer\",\r\n    \"career\": \"Ingeniero Informatico\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/candidates/create",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"candidates",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "5) Borrar Candidato",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJvbWFyemIiLCJpYXQiOjE3Mjc1MDEyMzcsImV4cCI6MTcyNzUzNzIzN30.mBC9Fnobp4OKzTkOE37rMqhvCqHiDv2Xtilv8fTWQks",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/candidates/6",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"candidates",
+						"6"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

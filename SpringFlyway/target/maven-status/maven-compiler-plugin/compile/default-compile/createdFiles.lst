@@ -1,0 +1,13 @@
+com\app\infrastructure\repository\CandidateRepository.class
+com\app\application\ports\in\CandidateUseCase.class
+com\app\util\ApplicationConfig.class
+com\app\domain\model\Candidate.class
+com\app\domain\service\CandidateService.class
+com\app\util\JwtAuthenticationFilter.class
+com\app\util\Swagger\SwaggerConfig.class
+com\app\SpringFlywayApplication.class
+com\app\application\ports\out\CandidateRepositoryPort.class
+com\app\infrastructure\adapter\out\CandidateRepositoryAdapter.class
+com\app\util\JwtService.class
+com\app\infrastructure\adapter\in\CandidateController.class
+com\app\util\SecurityConfig.class
